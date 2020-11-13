@@ -12,11 +12,11 @@
             <el-submenu index="2">
               <template slot="title">商品</template>
               <router-link tag="el-menu-item" to="xpgl">商品管理</router-link>
-              <el-menu-item>发布商品</el-menu-item>
-              <el-menu-item>分类管理</el-menu-item>
-              <el-menu-item>品牌管理</el-menu-item>
-              <el-menu-item>规格管理</el-menu-item>
-              <el-menu-item>类型管理</el-menu-item>
+              <router-link tag="el-menu-item" to="fbsp">发布商品</router-link>
+              <router-link tag="el-menu-item" to="flgl">分类管理</router-link>
+              <router-link tag="el-menu-item" to="ppgl">品牌管理</router-link>
+              <router-link tag="el-menu-item" to="gggl">规格管理</router-link>
+              <router-link tag="el-menu-item" to="lxgl">类型管理</router-link>
               <el-menu-item>商品咨询</el-menu-item>
               <el-menu-item>商品评价</el-menu-item>
               <el-menu-item>热销商品</el-menu-item>
@@ -76,8 +76,8 @@
           </el-menu>
         </el-aside>
         <keep-alive>
-        <router-view></router-view>
-      </keep-alive>
+          <router-view></router-view>
+        </keep-alive>
       </el-container>
     </div>
   </div>
@@ -88,26 +88,26 @@ export default {
   name: "home",
   components: {
     Header
-  },
+  }
 };
 </script>
 <style>
-.el-menu-item{
+.el-menu-item {
   background: #333;
 }
-.ys{
+.ys {
   background: #333;
 }
-.el-aside{
+.el-aside {
   margin-top: 60px;
 }
-.el-aside::-webkit-scrollbar{
+.el-aside::-webkit-scrollbar {
   display: none;
 }
-.el-submenu__title{
+.el-submenu__title {
   color: white;
 }
-.el-menu-item{
+.el-menu-item {
   color: white;
 }
 </style>

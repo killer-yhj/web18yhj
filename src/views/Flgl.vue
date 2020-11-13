@@ -6,7 +6,7 @@
         <li>>></li>
         <li>商品</li>
         <li>>></li>
-        <li>商品管理</li>
+        <li>分类管理</li>
       </ul>
     </div>
     <p class="p1">分类列表</p>
@@ -17,27 +17,10 @@
       </div>
       <div class="box2-2">
         <div class="box2-2-1">
-          <el-row>
-            <template>
-              <el-select v-model="value" placeholder="在售">
-                <el-option
-                  v-for="item in options"
-                  :key="item.value"
-                  :label="item.label"
-                  :value="item.value"
-                ></el-option>
-              </el-select>
-            </template>
-            <el-button size="small">推荐</el-button>
-            <el-button size="small">热卖</el-button>
-            <el-button size="small">调价</el-button>
-            <el-button size="small">商品</el-button>
-            <span class="span2">商品名称：</span>
-            <el-input v-model="input" class="inp1"></el-input>
-            <span class="span3">品牌：</span>
-            <el-input v-model="input" class="inp2"></el-input>
-            <el-button type="success" class="inp3">查询</el-button>
-          </el-row>
+          <p>
+            商品名称：
+            <span class="span5">所有分类</span>
+          </p>
         </div>
         <div class="box2-2-2">
           <template>
@@ -49,41 +32,29 @@
               @selection-change="handleSelectionChange"
             >
               <el-table-column type="selection"></el-table-column>
-              <el-table-column label="图片">
-                <template>
-                  <img src="../../u8391.jpg" class="tu2" />
-                </template>
-              </el-table-column>
-              <el-table-column prop="name" label="商品名称" width="250"></el-table-column>
-              <el-table-column prop="address" label="分类" show-overflow-tooltip></el-table-column>
-              <el-table-column prop="pp" label="品牌" show-overflow-tooltip></el-table-column>
-              <el-table-column prop="jg" label="价格" show-overflow-tooltip></el-table-column>
-              <el-table-column prop="kc" label="库存" show-overflow-tooltip></el-table-column>
-              <el-table-column prop="cz" label="操作" width="100" show-overflow-tooltip>
-                <img src="../../QQ图片20201113104856.png" class="tu3" />
-                <img src="../../QQ图片20201113104901.png" class="tu4" />
+              <el-table-column label="ID" prop="id"></el-table-column>
+              <el-table-column prop="name" label="分类名称" width="250"></el-table-column>
+              <el-table-column prop="address" label="访问路径" show-overflow-tooltip></el-table-column>
+              <el-table-column prop="pp" label="商品类型" show-overflow-tooltip></el-table-column>
+              <el-table-column prop="jg" label="排序" show-overflow-tooltip>
+                <el-input v-model="input" class="inpp"></el-input>
               </el-table-column>
             </el-table>
           </template>
         </div>
         <div class="box2-3">
           <el-button class="but3">批量删除</el-button>
-          <span class="span4">每页显示</span>
-          <input type="text" class="tex" />
-          <span class="span4">条，然后输入回车</span>
-          <div class="block">
-            <el-pagination layout="prev, pager, next" :total="50"></el-pagination>
-          </div>
+          <el-button class="but3">保存排序</el-button>
         </div>
       </div>
     </div>
   </div>
 </template>
-  
 <script>
 export default {
   data() {
     return {
+      input: "",
       data: [
         {
           label: "所有分类",
@@ -227,53 +198,46 @@ export default {
       ],
       tableData: [
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         },
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         },
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         },
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         },
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         },
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         },
         {
-          name: "【低价疯抢】Apple iPhone 6 32G",
-          address: "三星",
-          pp: "品牌",
-          jg: "3100",
-          kc: "5"
+          id: "1",
+          name: "数码",
+          address: "shuma",
+          pp: "数码"
         }
       ]
     };
@@ -326,7 +290,7 @@ export default {
   padding-top: 10px;
   padding-left: 10px;
   border: solid 1px #777;
-  height: 700px;
+  height: 708px;
   float: left;
 }
 .span1 {
@@ -346,6 +310,14 @@ export default {
   align-items: center;
   height: 60px;
   border-bottom: solid 1px #777;
+}
+.box2-2-1 {
+  line-height: 60px;
+}
+.box2-2-1 p {
+  margin-left: 20px;
+  font-size: 15px;
+  font-weight: 100;
 }
 .app >>> .el-input__inner {
   margin-left: 10px;
@@ -389,8 +361,8 @@ export default {
 .box2-3 {
   width: 100%;
   border: solid 1px #777;
-  height: 99px;
-  margin-top: 48px;
+  height: 106px;
+  margin-top: 35px;
   margin-left: -1px;
 }
 .but3 {
@@ -410,8 +382,14 @@ export default {
   outline: none;
   border: solid 1px #777;
 }
-.block{
+.block {
   float: right;
   margin-top: 40px;
+}
+.span5 {
+  color: aquamarine;
+}
+.inpp{
+    margin-left: -20px;
 }
 </style>

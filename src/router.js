@@ -30,6 +30,24 @@ export default new Router({
       {
         path:'/home/xpgl',
         component:()=>import('./views/Xpgl.vue')
+      },
+      {
+        path:'/home/fbsp',
+        component:()=>import('./views/Fbsp.vue')
+      }
+      ,
+      {
+        path:'/home/flgl',
+        component:()=>import('./views/Flgl.vue')
+      },{
+        path:'/home/ppgl',
+        component:()=>import('./views/Ppgl.vue')
+      },{
+        path:'/home/gggl',
+        component:()=>import('./views/Gggl.vue')
+      },{
+        path:'/home/lxgl',
+        component:()=>import('./views/Lxgl.vue')
       }
     ]
     }
