@@ -17,28 +17,28 @@
               <router-link tag="el-menu-item" to="ppgl">品牌管理</router-link>
               <router-link tag="el-menu-item" to="gggl">规格管理</router-link>
               <router-link tag="el-menu-item" to="lxgl">类型管理</router-link>
-              <el-menu-item>商品咨询</el-menu-item>
-              <el-menu-item>商品评价</el-menu-item>
-              <el-menu-item>热销商品</el-menu-item>
-              <el-menu-item>库存预警</el-menu-item>
+              <router-link tag="el-menu-item" to="spzx">商品咨询</router-link>
+              <router-link tag="el-menu-item" to="sppj">商品评价</router-link>
+              <router-link tag="el-menu-item" to="rxsp">热销商品</router-link>
+              <router-link tag="el-menu-item" to="kcyj">库存预警</router-link>
             </el-submenu>
             <el-submenu index="3">
               <template slot="title">订单</template>
-              <el-menu-item>订单管理</el-menu-item>
-              <el-menu-item>打印快递单</el-menu-item>
-              <el-menu-item>发货信息管理</el-menu-item>
-              <el-menu-item>退款/退货订单</el-menu-item>
+              <router-link tag="el-menu-item" to="ddgl">订单管理</router-link>
+              <router-link tag="el-menu-item" to="dykd">打印快递单</router-link>
+              <router-link tag="el-menu-item" to="fhxx">发货信息管理</router-link>
+              <router-link tag="el-menu-item" to="thfk">退款/退货订单</router-link>
             </el-submenu>
             <el-submenu index="4">
               <template slot="title">运营</template>
-              <el-menu-item>管理员</el-menu-item>
-              <el-menu-item>角色管理</el-menu-item>
-              <el-menu-item>广告版位</el-menu-item>
-              <el-menu-item>广告管理</el-menu-item>
-              <el-menu-item>优惠券</el-menu-item>
-              <el-menu-item>在线客服</el-menu-item>
-              <el-menu-item>首页海报</el-menu-item>
-              <el-menu-item>操作系统日志</el-menu-item>
+                <router-link tag="el-menu-item" to="gly">管理员</router-link>
+                <router-link tag="el-menu-item" to="jsgl">角色管理</router-link>
+                <router-link tag="el-menu-item" to="ggbw">广告版位</router-link>
+                <router-link tag="el-menu-item" to="gggl2">广告管理</router-link>
+                <router-link tag="el-menu-item" to="yhj">优惠券</router-link>
+                <router-link tag="el-menu-item" to="zxkf">在线客服</router-link>
+                <router-link tag="el-menu-item" to="syhb">首页海报</router-link>
+                <router-link tag="el-menu-item" to="czxtrz">操作系统日志</router-link>
             </el-submenu>
             <el-submenu index="5">
               <template slot="title">用户</template>

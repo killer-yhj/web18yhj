@@ -48,6 +48,57 @@ export default new Router({
       },{
         path:'/home/lxgl',
         component:()=>import('./views/Lxgl.vue')
+      },{
+        path:'/home/spzx',
+        component:()=>import('./views/Spzx.vue')
+      }
+      ,{
+        path:'/home/sppj',
+        component:()=>import('./views/Sppj.vue')
+      },{
+        path:'/home/rxsp',
+        component:()=>import('./views/Rxsp.vue')
+      },{
+        path:'/home/kcyj',
+        component:()=>import('./views/Kcsp.vue')
+      },{
+        path:'/home/ddgl',
+        component:()=>import('./views/Ddgl.vue')
+      },{
+        path:'/home/dykd',
+        component:()=>import('./views/Dykd.vue')
+      }
+      ,{
+        path:'/home/fhxx',
+        component:()=>import('./views/Fhxx.vue')
+      },{
+        path:'/home/thfk',
+        component:()=>import('./views/Tuihtk.vue')
+      },{
+        path:'/home/gly',
+        component:()=>import('./views/Gly.vue')
+      },{
+        path:'/home/jsgl',
+        component:()=>import('./views/Jsgl.vue')
+      },{
+        path:'/home/ggbw',
+        component:()=>import('./views/Ggbw.vue')
+      },{
+        path:'/home/gggl2',
+        component:()=>import('./views/Gggl2.vue')
+      }
+      ,{
+        path:'/home/yhj',
+        component:()=>import('./views/Yhj.vue')
+      } ,{
+        path:'/home/zxkf',
+        component:()=>import('./views/Zxkf.vue')
+      } ,{
+        path:'/home/syhb',
+        component:()=>import('./views/Syhb.vue')
+      },{
+        path:'/home/czxtrz',
+        component:()=>import('./views/Czxtrz.vue')
       }
     ]
     }
