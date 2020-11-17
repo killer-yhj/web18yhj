@@ -42,16 +42,16 @@
             </el-submenu>
             <el-submenu index="5">
               <template slot="title">用户</template>
-              <el-menu-item>用户管理</el-menu-item>
-              <el-menu-item>用户等级</el-menu-item>
-              <el-menu-item>数据字典</el-menu-item>
-              <el-menu-item>字典类型</el-menu-item>
-              <el-menu-item>站内信</el-menu-item>
+              <router-link tag="el-menu-item" to="yhgl">用户管理</router-link>
+              <router-link tag="el-menu-item" to="yhdj">用户等级</router-link>
+              <router-link tag="el-menu-item" to="sjzd">数据字典</router-link>
+              <router-link tag="el-menu-item" to="zdlx">字典类型</router-link>
+              <router-link tag="el-menu-item" to="znx">站内信</router-link>
             </el-submenu>
             <el-submenu index="6">
               <template slot="title">界面</template>
-              <el-menu-item>栏目</el-menu-item>
-              <el-menu-item>文章</el-menu-item>
+               <router-link tag="el-menu-item" to="lm">栏目</router-link>
+                <router-link tag="el-menu-item" to="wz">文章</router-link>
             </el-submenu>
             <el-submenu index="7">
               <template slot="title">设置</template>

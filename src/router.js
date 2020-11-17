@@ -24,7 +24,7 @@ export default new Router({
       component:()=>import('./views/Home.vue'),
       children:[
       {
-        path:'/home/gzt',
+        path:'gzt',
         component:()=>import('./views/Gzt.vue')
       },
       {
@@ -99,6 +99,27 @@ export default new Router({
       },{
         path:'/home/czxtrz',
         component:()=>import('./views/Czxtrz.vue')
+      },{
+        path:'/home/yhgl',
+        component:()=>import('./views/Yhgl.vue')
+      },{
+        path:'/home/yhdj',
+        component:()=>import('./views/Yhdj.vue')
+      },{
+        path:'/home/sjzd',
+        component:()=>import('./views/Sjzd.vue')
+      },{
+        path:'/home/zdlx',
+        component:()=>import('./views/Zdlx.vue')
+      },{
+        path:'/home/znx',
+        component:()=>import('./views/Znx.vue')
+      },{
+        path:'lm',
+        component:()=>import('./views/Lm.vue')
+      },{
+        path:'wz',
+        component:()=>import('./views/Wz.vue')
       }
     ]
     }

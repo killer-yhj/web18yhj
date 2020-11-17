@@ -12,7 +12,7 @@
     <p class="p1">分类列表</p>
     <div class="box2">
       <div class="box2-1">
-        <span class="el-icon-refresh span1">刷新</span>
+        <span class="el-icon-refresh span1" @click="shuaxin">刷新</span>
         <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
       </div>
       <div class="box2-2">
@@ -281,6 +281,9 @@ export default {
   methods: {
     handleNodeClick(data) {
       console.log(data);
+    },
+     shuaxin(){
+      this.$router.go(0);
     }
   }
 };
