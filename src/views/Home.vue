@@ -2,7 +2,7 @@
   <div id="app">
     <Header></Header>
     <div class="cbl">
-      <el-container style="height: 1120px; border: 1px solid #eee">
+      <el-container style="border: 1px solid #eee">
         <el-aside width="220px" style="background-color: #333">
           <el-menu class="ys">
             <el-submenu index="1">
@@ -55,10 +55,10 @@
             </el-submenu>
             <el-submenu index="7">
               <template slot="title">设置</template>
-              <el-menu-item>全局设置</el-menu-item>
-              <el-menu-item>基本设置</el-menu-item>
-              <el-menu-item>邮箱设置</el-menu-item>
-              <el-menu-item>单点登录设置</el-menu-item>
+               <router-link tag="el-menu-item" to="qjzs">全局设置</router-link>
+              <router-link tag="el-menu-item" to="jbsz">基本设置</router-link>
+                <router-link tag="el-menu-item" to="yxsz">邮箱设置</router-link>
+                <router-link tag="el-menu-item" to="djdl">单点登录设置</router-link>
               <el-menu-item>第三方登录设置</el-menu-item>
               <el-menu-item>支付设置</el-menu-item>
               <el-menu-item>公众号设置</el-menu-item>
@@ -109,5 +109,8 @@ export default {
 }
 .el-menu-item {
   color: white;
+}
+.cbl{
+  padding-bottom: 30px;
 }
 </style>

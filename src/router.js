@@ -120,6 +120,18 @@ export default new Router({
       },{
         path:'wz',
         component:()=>import('./views/Wz.vue')
+      },{
+        path:'qjzs',
+        component:()=>import('./views/Qjzs.vue')
+      },{
+        path:'jbsz',
+        component:()=>import('./views/Jbsz.vue')
+      },{
+        path:'yxsz',
+        component:()=>import('./views/Yxsz.vue')
+      },{
+        path:'djdl',
+        component:()=>import('./views/Djdl.vue')
       }
     ]
     }
