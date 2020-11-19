@@ -278,6 +278,7 @@ export default {
   margin-top: 60px;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .box1 {
   width: 99.9%;

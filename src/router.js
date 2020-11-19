@@ -132,6 +132,21 @@ export default new Router({
       },{
         path:'djdl',
         component:()=>import('./views/Djdl.vue')
+      },{
+        path:'dsf',
+        component:()=>import('./views/Dsf.vue')
+      },{
+        path:'zfsz',
+        component:()=>import('./views/Zfsz.vue')
+      },{
+        path:'gzh',
+        component:()=>import('./views/Gzh.vue')
+      },{
+        path:'pssz',
+        component:()=>import('./views/Pssz.vue')
+      },{
+        path:'apizh',
+        component:()=>import('./views/Apizh.vue')
       }
     ]
     }

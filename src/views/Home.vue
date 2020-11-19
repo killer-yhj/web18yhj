@@ -31,14 +31,14 @@
             </el-submenu>
             <el-submenu index="4">
               <template slot="title">运营</template>
-                <router-link tag="el-menu-item" to="gly">管理员</router-link>
-                <router-link tag="el-menu-item" to="jsgl">角色管理</router-link>
-                <router-link tag="el-menu-item" to="ggbw">广告版位</router-link>
-                <router-link tag="el-menu-item" to="gggl2">广告管理</router-link>
-                <router-link tag="el-menu-item" to="yhj">优惠券</router-link>
-                <router-link tag="el-menu-item" to="zxkf">在线客服</router-link>
-                <router-link tag="el-menu-item" to="syhb">首页海报</router-link>
-                <router-link tag="el-menu-item" to="czxtrz">操作系统日志</router-link>
+              <router-link tag="el-menu-item" to="gly">管理员</router-link>
+              <router-link tag="el-menu-item" to="jsgl">角色管理</router-link>
+              <router-link tag="el-menu-item" to="ggbw">广告版位</router-link>
+              <router-link tag="el-menu-item" to="gggl2">广告管理</router-link>
+              <router-link tag="el-menu-item" to="yhj">优惠券</router-link>
+              <router-link tag="el-menu-item" to="zxkf">在线客服</router-link>
+              <router-link tag="el-menu-item" to="syhb">首页海报</router-link>
+              <router-link tag="el-menu-item" to="czxtrz">操作系统日志</router-link>
             </el-submenu>
             <el-submenu index="5">
               <template slot="title">用户</template>
@@ -50,20 +50,20 @@
             </el-submenu>
             <el-submenu index="6">
               <template slot="title">界面</template>
-               <router-link tag="el-menu-item" to="lm">栏目</router-link>
-                <router-link tag="el-menu-item" to="wz">文章</router-link>
+              <router-link tag="el-menu-item" to="lm">栏目</router-link>
+              <router-link tag="el-menu-item" to="wz">文章</router-link>
             </el-submenu>
             <el-submenu index="7">
               <template slot="title">设置</template>
-               <router-link tag="el-menu-item" to="qjzs">全局设置</router-link>
+              <router-link tag="el-menu-item" to="qjzs">全局设置</router-link>
               <router-link tag="el-menu-item" to="jbsz">基本设置</router-link>
-                <router-link tag="el-menu-item" to="yxsz">邮箱设置</router-link>
-                <router-link tag="el-menu-item" to="djdl">单点登录设置</router-link>
-              <el-menu-item>第三方登录设置</el-menu-item>
-              <el-menu-item>支付设置</el-menu-item>
-              <el-menu-item>公众号设置</el-menu-item>
-              <el-menu-item>配送设置</el-menu-item>
-              <el-menu-item>API接口账号管理</el-menu-item>
+              <router-link tag="el-menu-item" to="yxsz">邮箱设置</router-link>
+              <router-link tag="el-menu-item" to="djdl">单点登录设置</router-link>
+              <router-link tag="el-menu-item" to="dsf">第三方登录设置</router-link>
+               <router-link tag="el-menu-item" to="zfsz">支付插件</router-link>
+               <router-link tag="el-menu-item" to="gzh">公众号设置</router-link>
+               <router-link tag="el-menu-item" to="pssz">配送设置</router-link>
+              <router-link tag="el-menu-item" to="apizh">API接口账号管理</router-link>
               <el-menu-item>API接口信息</el-menu-item>
               <el-menu-item>API接口调用记录</el-menu-item>
               <el-menu-item>FTP管理</el-menu-item>
@@ -110,7 +110,7 @@ export default {
 .el-menu-item {
   color: white;
 }
-.cbl{
+.cbl {
   padding-bottom: 30px;
 }
 </style>
